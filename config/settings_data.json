@@ -110,7 +110,7 @@
     "advanced_badge_mode_home": "text",
     "advanced_badge_mode_search": "text",
     "advanced_badge_mode_nav": "text",
-    "advanced_badge_map_1_text": "Free Starter Kit & Filters",
+    "advanced_badge_map_1_text": "Free Starter Kit and Filters",
     "advanced_badge_map_1_image": "shopify://shop_images/kit_filter.png",
     "product_icon_list_metafield": "custom.product_icons",
     "product_icon_list": true,
@@ -205,11 +205,33 @@
         "disabled": false,
         "settings": {}
       },
-      "15316669992541710076": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "11945366711752539959": {
+        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
+        "disabled": false,
+        "settings": {}
+      },
+      "16274361319697914395": {
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-floating/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": true,
         "settings": {
-          "star": "#ffa300",
+          "widget_id": "",
+          "show_all": true,
+          "show_index": true,
+          "show_product": true,
+          "show_collection": true,
+          "show_cart": true
+        }
+      },
+      "15316669992541710076": {
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "star": "#488669",
           "text_color": "#333333",
           "snippet_mode": "default",
           "text": "Reviews",
@@ -221,16 +243,6 @@
           "anchor_to_reviews_widget": true,
           "show_empty_stars": true
         }
-      },
-      "2567389343055140935": {
-        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
-        "disabled": false,
-        "settings": {}
-      },
-      "11945366711752539959": {
-        "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
-        "disabled": false,
-        "settings": {}
       }
     }
   },
