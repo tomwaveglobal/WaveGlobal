@@ -1,0 +1,58 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "context": {
+    "market": "gb"
+  },
+  "parent": "product.product-new.json",
+  "sections": {
+    "main-product": {
+      "settings": {},
+      "blocks": {
+        "text_gx83i": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "sale",
+            "icon_image": null,
+            "icon_width": 20,
+            "text": "Use code <strong>SUN15</strong> for 15% off | Limited Time Only!",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_rcrAce",
+        "vendor_br9FVx",
+        "title",
+        "reviews_io_reviewsio_rating_output_L6AWE4",
+        "text_DDUxag",
+        "description",
+        "countdown",
+        "variant_picker",
+        "variant_pre_order_inRkUK",
+        "on_site_message_EFzeYN",
+        "text_gx83i",
+        "buy_buttons",
+        "share",
+        "product_bundle_tWCDMV",
+        "inventory",
+        "pickup_availability",
+        "complementary",
+        "sticky_buy_button",
+        "icon_list_4xTkbm",
+        "text_7bqpGD",
+        "text_LiCrpH",
+        "text_kfKeDi",
+        "text_9JnzcB"
+      ]
+    }
+  }
+}

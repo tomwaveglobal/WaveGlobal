@@ -1,0 +1,469 @@
+<style>
+  /* Custom Subscription Widget with Dropdown Interface */
+  .custom-subscription-widget {
+    margin: var(--sp-4) 0;
+    background: rgb(var(--color-background));
+    border: var(--inputs-border-width) solid rgb(var(--color-foreground) / var(--inputs-border-opacity));
+    border-radius: var(--inputs-radius);
+    padding: var(--sp-4);
+  }
+
+  /* Main purchase type selector */
+  .purchase-type-selector {
+    display: flex;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-4);
+  }
+
+  .purchase-type-option {
+    flex: 1;
+    position: relative;
+  }
+
+  .purchase-type-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .purchase-type-option label {
+    display: block;
+    padding: var(--sp-3) var(--sp-4);
+    background: rgb(var(--color-background));
+    border: var(--inputs-border-width) solid rgb(var(--color-foreground) / var(--inputs-border-opacity));
+    border-radius: var(--inputs-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: var(--text-sm);
+    font-family: var(--font-body-family);
+    color: rgb(var(--color-foreground));
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .purchase-type-option input[type="radio"]:checked + label {
+    background: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+    border-color: rgb(var(--color-foreground));
+    box-shadow: 0 2px 8px rgb(var(--color-foreground) / 0.15);
+  }
+
+  .purchase-type-option label:hover {
+    background: rgb(var(--color-foreground) / 0.045);
+    border-color: rgb(var(--color-foreground));
+  }
+
+  .purchase-type-option input[type="radio"]:focus-visible + label {
+    outline: 2px solid rgb(var(--color-keyboard-focus));
+    outline-offset: 2px;
+  }
+
+  /* Subscription frequency dropdown - matches contact form styling */
+  .subscription-frequency-container {
+    display: none;
+    margin-top: var(--sp-3);
+  }
+
+  .subscription-frequency-container.active {
+    display: block;
+  }
+
+  .subscription-frequency-field {
+    --border-opacity: var(--inputs-border-opacity);
+    position: relative;
+    text-align: start;
+  }
+
+  .frequency-select {
+    appearance: none;
+    text-align: start;
+    width: 100%;
+    height: var(--input-height);
+    padding-inline-start: var(--input-padding-inline);
+    padding-inline-end: var(--input-padding-inline);
+    font-size: var(--text-sm);
+    font-family: var(--font-body-family);
+    color: rgb(var(--color-foreground));
+    background-color: rgb(var(--color-background));
+    border: var(--inputs-border-width) solid rgb(var(--color-foreground) / var(--inputs-border-opacity));
+    border-radius: var(--inputs-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .frequency-select.is-floating {
+    height: calc(var(--input-height) + var(--sp-2d5));
+    padding-block-start: var(--sp-4);
+  }
+
+  .frequency-select option {
+    color: rgb(var(--color-foreground));
+    background-color: rgb(var(--color-background));
+  }
+
+  .frequency-select:focus-visible {
+    box-shadow: none;
+    border-color: rgb(var(--color-foreground));
+    background-color: rgb(var(--color-foreground) / 0.045);
+    outline: none;
+  }
+
+  .frequency-select-label {
+    position: absolute;
+    inset-block-start: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    height: var(--input-height);
+    padding-inline-start: var(--input-padding-inline);
+    padding-inline-end: var(--input-padding-inline);
+    font-size: var(--text-sm);
+    font-family: var(--font-body-family);
+    color: rgb(var(--color-foreground) / 0.5);
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transform-origin: left;
+  }
+
+  .frequency-select[required]:valid ~ .frequency-select-label,
+  .frequency-select[selected] ~ .frequency-select-label,
+  .frequency-select:focus ~ .frequency-select-label,
+  .frequency-select:not([value=""]) ~ .frequency-select-label {
+    --tw-translate-y: calc(var(--sp-2d5) * -1);
+    --tw-scale-x: .80;
+    --tw-scale-y: .80;
+    transform: translateY(var(--tw-translate-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .frequency-select ~ .frequency-chevron {
+    position: absolute;
+    inset-block-start: calc(50% - 10px);
+    inset-inline-end: var(--input-padding-inline);
+    transform: scaleY(-1);
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .frequency-select {
+      font-size: var(--text-base);
+      line-height: 1.6;
+    }
+
+    .frequency-select[required]:valid ~ .frequency-select-label,
+    .frequency-select[selected] ~ .frequency-select-label,
+    .frequency-select:focus ~ .frequency-select-label,
+    .frequency-select:not([value=""]) ~ .frequency-select-label {
+      --tw-scale-x: .70;
+      --tw-scale-y: .70;
+    }
+  }
+
+  @supports (-webkit-overflow-scrolling: touch) {
+    .frequency-select:focus-visible {
+      font-size: max(var(--text-sm), 16px);
+    }
+  }
+
+  /* Price display */
+  .price-display {
+    margin-top: var(--sp-4);
+    padding: var(--sp-4);
+    background: rgb(var(--color-foreground) / 0.025);
+    border: var(--inputs-border-width) solid rgb(var(--color-foreground) / var(--inputs-border-opacity));
+    border-radius: var(--inputs-radius);
+  }
+
+  .price-display .current-price {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: rgb(var(--color-foreground));
+    margin-bottom: var(--sp-2);
+    font-family: var(--font-heading-family);
+  }
+
+  .price-display .original-price {
+    font-size: var(--text-sm);
+    color: rgb(var(--color-foreground) / 0.6);
+    text-decoration: line-through;
+    margin-right: var(--sp-2);
+  }
+
+  .price-display .savings {
+    font-size: var(--text-sm);
+    color: rgb(var(--color-foreground));
+    font-weight: 500;
+    background: rgb(var(--color-foreground) / 0.1);
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--inputs-radius);
+    display: inline-block;
+  }
+
+  /* Policy text */
+  .subscription-policy {
+    margin-top: var(--sp-3);
+    font-size: var(--text-xs);
+    color: rgb(var(--color-foreground) / 0.7);
+    line-height: 1.4;
+    font-style: italic;
+  }
+
+  /* Hidden original subscription app elements */
+  .shopify_subscriptions_app_block_purchase_options {
+    display: none !important;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 767px) {
+    .custom-subscription-widget {
+      padding: var(--sp-3);
+    }
+    
+    .purchase-type-selector {
+      flex-direction: column;
+      gap: var(--sp-2);
+    }
+    
+    .purchase-type-option label {
+      font-size: var(--text-sm);
+      padding: var(--sp-2d5) var(--sp-3);
+    }
+    
+    .price-display {
+      padding: var(--sp-3);
+    }
+    
+    .price-display .current-price {
+      font-size: var(--text-base);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .purchase-type-option label {
+      font-size: var(--text-base);
+    }
+  }
+</style>
+
+<!-- Custom Subscription Widget HTML -->
+<div class="custom-subscription-widget" id="custom-subscription-widget">
+  <div class="purchase-type-selector">
+    <div class="purchase-type-option">
+      <input type="radio" id="one-time-purchase" name="purchase-type" value="one-time" checked>
+      <label for="one-time-purchase">One-time purchase</label>
+    </div>
+    <div class="purchase-type-option">
+      <input type="radio" id="subscription-purchase" name="purchase-type" value="subscription">
+      <label for="subscription-purchase">Subscribe & Save</label>
+    </div>
+  </div>
+
+  <div class="subscription-frequency-container" id="subscription-frequency-container">
+    <div class="subscription-frequency-field">
+      <select 
+        class="frequency-select is-floating" 
+        id="frequency-select"
+        is="custom-select"
+      >
+        <option value="" disabled selected></option>
+        <option value="weekly">Deliver every week, 15% off</option>
+        <option value="bi-weekly">Deliver every 2 weeks, 15% off</option>
+        <option value="tri-weekly">Deliver every 3 weeks, 15% off</option>
+        <option value="monthly">Deliver every month, 15% off</option>
+        <option value="bi-monthly">Deliver every 2 months, 15% off</option>
+        <option value="semi-annually">Deliver every 6 months, 15% off</option>
+      </select>
+      <label class="frequency-select-label is-floating" for="frequency-select">Select delivery frequency</label>
+      <div class="frequency-chevron">
+        <svg class="w-3 h-3" viewBox="0 0 24 24" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 15L12 9L18 15"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="price-display" id="price-display">
+    <div class="current-price" id="current-price">£19.99 GBP</div>
+    <div class="price-details" id="price-details">
+      <span class="original-price" id="original-price" style="display: none;"></span>
+      <span class="savings" id="savings" style="display: none;"></span>
+    </div>
+  </div>
+
+  <div class="subscription-policy" id="subscription-policy" style="display: none;">
+    Auto-renews, skip or cancel anytime.
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Wait for the original subscription app to load
+  const checkForOriginalApp = setInterval(() => {
+    const originalApp = document.querySelector('.shopify_subscriptions_app_block_purchase_options');
+    if (originalApp) {
+      initializeCustomWidget();
+      clearInterval(checkForOriginalApp);
+    }
+  }, 100);
+
+  function initializeCustomWidget() {
+    const purchaseTypeRadios = document.querySelectorAll('input[name="purchase-type"]');
+    const frequencyContainer = document.getElementById('subscription-frequency-container');
+    const frequencySelect = document.getElementById('frequency-select');
+    const priceDisplay = document.getElementById('current-price');
+    const originalPrice = document.getElementById('original-price');
+    const savings = document.getElementById('savings');
+    const policy = document.getElementById('subscription-policy');
+    const priceDetails = document.getElementById('price-details');
+
+    // Get original app data
+    const originalApp = document.querySelector('.shopify_subscriptions_app_block_purchase_options');
+    const oneTimePriceScript = document.getElementById('subscriptions_money_with_currency_one_time_purchase_19723553669177');
+    const subscriptionScripts = document.querySelectorAll('script[id*="subscriptions_money_with_currency_"][id*="selling_plan"]');
+    
+    let oneTimePriceData = null;
+    let subscriptionPriceData = {};
+
+    // Parse original app data
+    if (oneTimePriceScript) {
+      try {
+        oneTimePriceData = JSON.parse(oneTimePriceScript.textContent);
+      } catch (e) {
+        console.error('Error parsing one-time price data:', e);
+      }
+    }
+
+    subscriptionScripts.forEach(script => {
+      try {
+        const data = JSON.parse(script.textContent);
+        const scriptId = script.id;
+        // Extract frequency from the script ID or content
+        const frequency = extractFrequencyFromScript(script);
+        if (frequency) {
+          subscriptionPriceData[frequency] = data;
+        }
+      } catch (e) {
+        console.error('Error parsing subscription price data:', e);
+      }
+    });
+
+    function extractFrequencyFromScript(script) {
+      // Map script content to frequency keys
+      const content = script.textContent;
+      if (content.includes('every week')) return 'weekly';
+      if (content.includes('every 2 weeks')) return 'bi-weekly';
+      if (content.includes('every 3 weeks')) return 'tri-weekly';
+      if (content.includes('every month')) return 'monthly';
+      if (content.includes('every 2 months')) return 'bi-monthly';
+      if (content.includes('every 6 months')) return 'semi-annually';
+      return null;
+    }
+
+    // Handle purchase type change
+    purchaseTypeRadios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.value === 'subscription') {
+          frequencyContainer.classList.add('active');
+          policy.style.display = 'block';
+          updatePriceDisplay();
+        } else {
+          frequencyContainer.classList.remove('active');
+          policy.style.display = 'none';
+          updatePriceDisplay();
+        }
+      });
+    });
+
+    // Handle frequency change
+    frequencySelect.addEventListener('change', function() {
+      updatePriceDisplay();
+    });
+
+    function updatePriceDisplay() {
+      const selectedPurchaseType = document.querySelector('input[name="purchase-type"]:checked').value;
+      
+      if (selectedPurchaseType === 'one-time') {
+        if (oneTimePriceData) {
+          priceDisplay.innerHTML = oneTimePriceData.price;
+          originalPrice.style.display = 'none';
+          savings.style.display = 'none';
+        }
+      } else {
+        const selectedFrequency = frequencySelect.value;
+        if (selectedFrequency && subscriptionPriceData[selectedFrequency]) {
+          const data = subscriptionPriceData[selectedFrequency];
+          priceDisplay.innerHTML = data.price;
+          
+          if (data.comparedAtPrice) {
+            originalPrice.innerHTML = data.comparedAtPrice;
+            originalPrice.style.display = 'inline';
+            savings.innerHTML = 'Save 15%';
+            savings.style.display = 'inline';
+          } else {
+            originalPrice.style.display = 'none';
+            savings.style.display = 'none';
+          }
+        } else {
+          // Default to one-time price if no subscription selected
+          if (oneTimePriceData) {
+            priceDisplay.innerHTML = oneTimePriceData.price;
+            originalPrice.style.display = 'none';
+            savings.style.display = 'none';
+          }
+        }
+      }
+    }
+
+    // Initialize with one-time purchase
+    updatePriceDisplay();
+
+    // Sync with original app functionality
+    function syncWithOriginalApp() {
+      const selectedPurchaseType = document.querySelector('input[name="purchase-type"]:checked').value;
+      
+      if (selectedPurchaseType === 'one-time') {
+        // Check the one-time purchase radio in original app
+        const oneTimeRadio = originalApp.querySelector('input[data-radio-type="one_time_purchase"]');
+        if (oneTimeRadio) {
+          oneTimeRadio.checked = true;
+          oneTimeRadio.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      } else {
+        const selectedFrequency = frequencySelect.value;
+        if (selectedFrequency) {
+          // Find and check the corresponding subscription radio in original app
+          const subscriptionRadios = originalApp.querySelectorAll('input[data-radio-type="selling_plan"]');
+          subscriptionRadios.forEach(radio => {
+            const label = radio.closest('label');
+            if (label && label.textContent.includes(getFrequencyText(selectedFrequency))) {
+              radio.checked = true;
+              radio.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+          });
+        }
+      }
+    }
+
+    function getFrequencyText(frequency) {
+      const frequencyMap = {
+        'weekly': 'every week',
+        'bi-weekly': 'every 2 weeks',
+        'tri-weekly': 'every 3 weeks',
+        'monthly': 'every month',
+        'bi-monthly': 'every 2 months',
+        'semi-annually': 'every 6 months'
+      };
+      return frequencyMap[frequency] || '';
+    }
+
+    // Add event listeners for syncing
+    purchaseTypeRadios.forEach(radio => {
+      radio.addEventListener('change', syncWithOriginalApp);
+    });
+    
+    frequencySelect.addEventListener('change', syncWithOriginalApp);
+  }
+});
+</script>
+

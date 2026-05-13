@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "slideshow": {
+      "settings": {},
+      "blocks": {
+        "image_hgfaH": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/persona_68_img_310.webp",
+            "image_mobile": null,
+            "header-65f7f698ac6923a2d111427e681df8db": null,
+            "heading": "Scary Good Spa Deals Are Here!",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "Shop Before It's Gone!",
+            "button_link": "shopify://collections/sale",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_kEyLXj": {
+          "settings": {
+            "heading": "Find You Next Adventure, Paddleboards from <span style=\"color: #F59E0B;\">$289.99 </span>"
+          }
+        },
+        "image_MGQwRL": {
+          "settings": {
+            "button_link": "shopify://products/aegean-hot-tub-etl"
+          }
+        }
+      },
+      "block_order": [
+        "image_hgfaH",
+        "image_kEyLXj",
+        "image_MGQwRL",
+        "image_UPWkm3",
+        "image_3jPQA6"
+      ]
+    },
+    "rich-text-1": {
+      "settings": {},
+      "blocks": {
+        "text": {
+          "settings": {
+            "text": "<p>At Wave, we make relaxation effortless whether you're unwinding in a premium <a href=\"https://waveglobal.com/en-us/collections/hot-tub-full-range\" title=\"Hot Tubs\">hot tub</a> or gliding on a top-quality <a href=\"https://waveglobal.com/collections/sup-range\" title=\"https://waveglobal.com/collections/sup-range\">paddleboard</a>. Our innovative energy-efficient foam spas use 50% less energy, with sleek, whisper-quiet heaters for ultimate comfort. And when adventure calls, our expertly crafted paddleboards deliver performance, stability, and fun - perfect for solo escapes or family days out.  </p><p>Need help? Our friendly team and easy setup guides have you covered. Float, soak, switch off, <strong>Wave’s got you.</strong></p>"
+          }
+        }
+      }
+    },
+    "video-with-text-overlay": {
+      "settings": {},
+      "blocks": {
+        "button": {
+          "settings": {
+            "button_link": "shopify://products/garda-hot-tub-etl"
+          }
+        }
+      }
+    },
+    "featured-product": {
+      "settings": {
+        "product": "garda-hot-tub-etl"
+      },
+      "blocks": {}
+    },
+    "floating_product_bundle_RcQhp6": {
+      "settings": {
+        "products": [
+          "tourer-sup",
+          "wave-3-in-1-robe",
+          "lightweight-carbon-paddle"
+        ]
+      },
+      "blocks": {}
+    },
+    "testimonials-banner": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    }
+  }
+}

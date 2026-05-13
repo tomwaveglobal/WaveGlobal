@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "countdown_timer_ywzXB": {
+      "type": "countdown-timer",
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/persona_68_img_309_46a4d9e1-b1e7-4eaa-b2f9-c1329eda0db9.png",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "header-d8bc3a8dde769a2a09311eb4d7b08fcf": null,
+        "image_mobile": "shopify://shop_images/Halloween_Homepage_Mobile_2025.png",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "header-0e3628a8312201b238d274475d4f5021": null,
+        "color_text": "#ffffff",
+        "color_highlight": "#f59e0b",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 30,
+        "header-509ef4181e4c5300ca25a3410a323e68": null,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      },
+      "blocks": {
+        "heading_iHkAV": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "heading": "No Tricks, Just Treats",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "header-9f8a4a167e755f9ee3a30f67133a8694": null,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_6z6Nr": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "text": "<p>An Extra <em>10% OFF</em> Hot Tubs This Halloween</p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "header-21dcb609bb51b4a88959aaa555254481": null,
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "timer_AGeEY": {
+          "type": "timer",
+          "disabled": false,
+          "settings": {
+            "paragraph-4564ffd4ff2a81dc724ea5ff04cfb063": null,
+            "year": "2025",
+            "month": "10",
+            "day": "17",
+            "hour": "23",
+            "minute": "59",
+            "text_font": "heading",
+            "text_size": "title-lg tracking-heading",
+            "message": ""
+          }
+        },
+        "button_dwggw": {
+          "type": "button",
+          "disabled": false,
+          "settings": {
+            "button_label": "Shop Before It's Gone!",
+            "button_link": "shopify://collections/hot-tub-full-range",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_iHkAV",
+        "text_6z6Nr",
+        "timer_AGeEY",
+        "button_dwggw"
+      ],
+      "name": "t:sections.countdown-timer.presets.name"
+    },
+    "slideshow": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {}
+    }
+  },
+  "order": [
+    "slideshow",
+    "countdown_timer_ywzXB",
+    "rich-text-1",
+    "collection-list",
+    "video-with-text-overlay",
+    "featured-product",
+    "rich-text-2",
+    "floating_product_bundle_RcQhp6",
+    "scrolling-text-1",
+    "countdown-timer",
+    "shop-the-look",
+    "testimonials-banner",
+    "17508706768f30f21d",
+    "featured-collections",
+    "blog-posts-collage"
+  ]
+}

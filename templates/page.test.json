@@ -1,0 +1,181 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "comparison_JddB6e": {
+      "type": "comparison",
+      "blocks": {
+        "product_b6xn4U": {
+          "type": "product",
+          "settings": {
+            "product": "como-hot-tub-ukca",
+            "custom_title": "The Como",
+            "review_rating": "{{ block.settings.product.metafields.product.review_schema.value.product_review_rate.value }}",
+            "review_count": "{{ block.settings.product.metafields.reviewscouk.total.value }}",
+            "dimensions": "6 Person | 195x70cm | 77x27\"",
+            "shape": "Octagon",
+            "material": "Woven UV-protected PVC construction with PU-insulated foam core",
+            "massage_system": "90",
+            "split_payment": "From £299.99*",
+            "heater_filter": "1800W eco heater with a max controllable temperature of 40°C (104°F)",
+            "flow_rate": "1,325L (350GAL)/hour",
+            "certification": "UKCE Approved",
+            "power_cable": "Industry-standard 7m cable",
+            "accessories": "1x filter, cover, inflatable cover inner, inflation hose, manual"
+          }
+        },
+        "product_hnfWrK": {
+          "type": "product",
+          "settings": {
+            "product": "garda-hot-tub-ukca",
+            "custom_title": "The Garda",
+            "review_rating": "{{ block.settings.product.metafields.product.review_schema.value.product_review_rate.value }}",
+            "review_count": "{{ block.settings.product.metafields.reviewscouk.total.value }}",
+            "dimensions": "4 Person | 160x70cm | 63x27\"<br>\n6 Person | 180x70cm | 71x27\"",
+            "shape": "Square",
+            "material": "Woven UV-protected PVC construction with PU-insulated foam core",
+            "massage_system": "70/90",
+            "split_payment": "From £274.99*",
+            "heater_filter": "1800W eco heater with a max controllable temperature of 40°C (104°F)",
+            "flow_rate": "1,325L (350GAL)/hour",
+            "certification": "UKCE Approved",
+            "power_cable": "Industry-standard 7m cable",
+            "accessories": "1x filter, cover, inflatable cover inner, inflation hose, manual"
+          }
+        },
+        "product_LEWFxB": {
+          "type": "product",
+          "settings": {
+            "product": "tahoe-hot-tub-ukca",
+            "custom_title": "The Tahoe",
+            "review_rating": "{{ block.settings.product.metafields.product.review_schema.value.product_review_rate.value }}",
+            "review_count": "{{ block.settings.product.metafields.reviewscouk.total.value }}",
+            "dimensions": "4 Person | 156x70cm | 61x27\"<br>\n6 Person | 184x70cm | 72x27\"",
+            "shape": "Round",
+            "material": "Woven UV-protected PVC construction with PU-insulated foam core",
+            "massage_system": "70/90",
+            "split_payment": "From £224.99*",
+            "heater_filter": "1800W eco heater with a max controllable temperature of 40°C (104°F)",
+            "flow_rate": "1,325L (350GAL)/hour",
+            "certification": "UKCE Approved",
+            "power_cable": "Industry-standard 7m cable",
+            "accessories": "1x filter, cover, inflatable cover inner, inflation hose, manual"
+          }
+        }
+      },
+      "block_order": [
+        "product_b6xn4U",
+        "product_hnfWrK",
+        "product_LEWFxB"
+      ],
+      "name": "Product Comparison Table",
+      "settings": {
+        "heading": "Compare Products",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "product_image_size_desktop": 300,
+        "product_image_size_mobile": 120,
+        "product_card_padding": 10,
+        "image_title_spacing": 4,
+        "title_price_spacing": 4,
+        "price_content_spacing": 4,
+        "initial_rows": 5,
+        "show_more_text": "Show more",
+        "show_less_text": "Show less",
+        "show_variant_thumbnails": true,
+        "variant_display_type": "swatches",
+        "show_buy_buttons": true,
+        "buy_button_text": "Buy Now",
+        "table_background": "#fafafa",
+        "border_color": "#fafafa",
+        "header_background": "#f8f9fa",
+        "product_card_background": "#ffffff",
+        "spec_label_background": "#f8f9fa",
+        "spec_value_background": "#ffffff",
+        "footer_background": "#f8f9fa",
+        "product_title_color": "#333333",
+        "product_title_size": 20,
+        "price_color": "#333333",
+        "price_from_color": "#666666",
+        "original_price_color": "#999999",
+        "price_size": 18,
+        "review_text_color": "#666666",
+        "star_filled_color": "#052c31",
+        "star_empty_color": "#dddddd",
+        "spec_label_color": "#333333",
+        "spec_label_size": 14,
+        "spec_value_color": "#555555",
+        "spec_value_size": 13,
+        "button_color": "#052c31",
+        "buy_button_background": "#052c31",
+        "buy_button_text_color": "#ffffff",
+        "buy_button_hover_background": "#333333",
+        "buy_button_hover_text_color": "#ffffff",
+        "buy_button_radius": 25,
+        "buy_button_padding_vertical": 10,
+        "buy_button_padding_horizontal": 21,
+        "buy_button_font_size": 14,
+        "buy_button_font_weight": "600",
+        "buy_button_width": "180",
+        "buy_button_text_transform": "none",
+        "buy_button_letter_spacing": 0,
+        "buy_button_border_width": 0,
+        "buy_button_border_color": "rgba(0,0,0,0)",
+        "buy_button_hover_border_color": "rgba(0,0,0,0)",
+        "buy_button_transition_duration": 0.2,
+        "buy_button_shadow": "none",
+        "buy_button_hover_shadow": "none",
+        "buy_button_hover_transform": "none",
+        "buy_button_active_transform": "scale(0.98)",
+        "variant_border_color": "#dddddd",
+        "placeholder_background": "#f9f9f9",
+        "placeholder_border": "#dddddd",
+        "placeholder_text_color": "#999999",
+        "dimensions_label": "Dimensions",
+        "shape_label": "Shape",
+        "material_label": "Material",
+        "massage_system_label": "Massage System",
+        "split_payment_label": "Split the Payment",
+        "heater_filter_label": "Heater/Filter",
+        "flow_rate_label": "Flow Rate",
+        "certification_label": "Certification",
+        "power_cable_label": "Power Cable",
+        "accessories_label": "Accessories",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "comparison_JddB6e"
+  ]
+}

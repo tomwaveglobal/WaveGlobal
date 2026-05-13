@@ -1,0 +1,86 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.product-new.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "main-product": {
+      "settings": {},
+      "blocks": {
+        "description": {
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_pre_order_q6DeL": {
+          "type": "variant_pre_order",
+          "disabled": false,
+          "settings": {
+            "text_size": "text-base",
+            "color_text": "#ffffff",
+            "color_background": "#052c31"
+          }
+        },
+        "on_site_message_EFzeYN": {
+          "disabled": true,
+          "settings": {
+            "message_divide_amount": "3"
+          }
+        },
+        "on_site_message_G6iNpC": {
+          "type": "on_site_message",
+          "disabled": false,
+          "settings": {
+            "message_custom_icon": "shopify://shop_images/klarna_a9f5e37f-e7d4-4a92-8855-06dd03486416.png",
+            "message_icon_width": 100,
+            "message_image_checkbox": true,
+            "message": "<p>Starting at #amount* per month</p>",
+            "message_divide_amount": "12",
+            "message_price_range": "100",
+            "message_limit_amount": "100000",
+            "message_background": "#fafafa",
+            "message_text_color": "#00a341"
+          }
+        },
+        "text_7bqpGD": {
+          "settings": {
+            "text": "<strong>Free Next Day Shipping (Tracked)</strong>"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_rcrAce",
+        "vendor_br9FVx",
+        "title",
+        "reviews_io_reviewsio_rating_output_L6AWE4",
+        "text_DDUxag",
+        "description",
+        "countdown",
+        "variant_picker",
+        "variant_pre_order_q6DeL",
+        "product_bundle_tWCDMV",
+        "inventory",
+        "buy_buttons",
+        "on_site_message_EFzeYN",
+        "on_site_message_G6iNpC",
+        "pickup_availability",
+        "share",
+        "complementary",
+        "sticky_buy_button",
+        "icon_list_4xTkbm",
+        "text_7bqpGD",
+        "text_LiCrpH",
+        "text_kfKeDi",
+        "text_9JnzcB"
+      ]
+    }
+  }
+}
