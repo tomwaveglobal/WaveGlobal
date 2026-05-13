@@ -336,6 +336,7 @@
                 -%}
               </div>
 
+              {%- comment -%} Shop Pay installments hidden on PDP — re-enable by removing this comment wrapper
               {%- if price_block == blank and block.settings.show_price -%}
                 {%- assign product_form_installment_id = 'ProductFormInstallment-' | append: section.id | append: '-' | append: product.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment text-sm leading-tight' -%}
@@ -343,6 +344,7 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               {%- endif -%}
+              {%- endcomment -%}
 
             {%- when 'price' -%}
               <div class="product__price grid gap-3" {{ block.shopify_attributes }}>
@@ -356,11 +358,13 @@
                   {%- endif -%}
                 </div>
 
+                {%- comment -%} Shop Pay installments hidden on PDP — re-enable by removing this comment wrapper
                 {%- assign product_form_installment_id = 'ProductFormInstallment-' | append: section.id | append: '-' | append: product.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment text-sm leading-tight' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
                   {{ form | payment_terms }}
                 {%- endform -%}
+                {%- endcomment -%}
 
                 {%- if block.settings.show_taxes_notice -%}
                   {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
