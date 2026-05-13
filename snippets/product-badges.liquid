@@ -31,7 +31,7 @@
       {%- if badge_fg != blank -%}--badge-foreground: {{ badge_fg }};{%- endif -%}
     {%- endcapture -%}
 
-    {%- assign label_entries = label_value | split: ';' -%}
+    {%- assign label_entries = label_value | join: ';' | split: ';' -%}
     {%- for entry in label_entries -%}
       {%- assign entry_trimmed = entry | strip -%}
       {%- if entry_trimmed == blank -%}{%- continue -%}{%- endif -%}
