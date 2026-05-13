@@ -328,13 +328,6 @@
                     {%- endif -%}
                   </div>
                 {%- endif -%}
-
-                {%- liquid
-                  # Inline rating inside Title block hidden — the standalone rating block (`{%- when 'rating' -%}`) renders the visible one
-                  # if rating_block == blank and block.settings.show_rating
-                  #   render 'product-rating', product: product
-                  # endif
-                -%}
               </div>
 
               {%- comment -%} Shop Pay installments hidden on PDP — re-enable by removing this comment wrapper
