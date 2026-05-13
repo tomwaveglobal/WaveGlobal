@@ -110,6 +110,8 @@
     "advanced_badge_mode_home": "text",
     "advanced_badge_mode_search": "text",
     "advanced_badge_mode_nav": "text",
+    "advanced_badge_map_1_text": "Free Starter Kit and Filters",
+    "advanced_badge_map_1_image": "shopify://shop_images/kit_filter.png",
     "product_icon_list_metafield": "custom.product_icons",
     "product_icon_list": true,
     "product_icon_list_max": 4,
