@@ -16109,12 +16109,12 @@ label.option-disabled.label-swatch {
 }
 
 /* Trustpilot logo appended after the product page rating snippet ("X Reviews") */
-reviewsio-product-ratings {
+.ruk_rating_snippet {
   display: inline-flex;
   align-items: center;
 }
 
-reviewsio-product-ratings::after {
+.ruk_rating_snippet::after {
   content: '';
   display: inline-block;
   margin-inline-start: var(--sp-3);
