@@ -23,12 +23,12 @@
         "content_width": "small",
         "content_position": "md:items-center md:justify-center",
         "text_alignment": "center",
-        "header-d8bc3a8dde769a2a09311eb4d7b08fcf": null,
+        "header-e668b47d8f0d5a72b111c2945e5e3d0a": null,
         "image_mobile": "shopify://shop_images/Halloween_Homepage_Mobile_2025.png",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-center justify-center",
         "text_alignment_mobile": "center",
-        "header-0e3628a8312201b238d274475d4f5021": null,
+        "header-af50d0b27635a14f3708e9b7f3e29b1a": null,
         "color_text": "#ffffff",
         "color_highlight": "#f59e0b",
         "gradient_highlight": "",
@@ -37,7 +37,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 30,
-        "header-509ef4181e4c5300ca25a3410a323e68": null,
+        "header-1eee2d98d6513133ea6341f9c7bf056e": null,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
@@ -54,7 +54,7 @@
             "heading": "No Tricks, Just Treats",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "header-9f8a4a167e755f9ee3a30f67133a8694": null,
+            "header-042bb4b9cda8654182b9c120a1fe5b36": null,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -68,7 +68,7 @@
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
-            "header-21dcb609bb51b4a88959aaa555254481": null,
+            "header-50ef7b222615322490bb9425b0fce309": null,
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
@@ -77,7 +77,7 @@
           "type": "timer",
           "disabled": false,
           "settings": {
-            "paragraph-4564ffd4ff2a81dc724ea5ff04cfb063": null,
+            "paragraph-be167f7b76902a2230d221ee9158a657": null,
             "year": "2025",
             "month": "10",
             "day": "17",
@@ -112,7 +112,17 @@
     "slideshow": {
       "disabled": false,
       "settings": {},
-      "blocks": {}
+      "blocks": {
+        "image_kEyLXj": {
+          "disabled": false,
+          "settings": {
+            "image": "shopify://shop_images/carousel_home_bundle.webp",
+            "image_mobile": "shopify://shop_images/carousel_home_bundle_Mobile_1.jpg",
+            "heading": "‎",
+            "button_link": "shopify://collections/hot-tub-full-range"
+          }
+        }
+      }
     }
   },
   "order": [
