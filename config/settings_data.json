@@ -243,6 +243,11 @@
           "anchor_to_reviews_widget": true,
           "show_empty_stars": true
         }
+      },
+      "17450752420321394331": {
+        "type": "shopify://apps/vex-auto-add-to-cart/blocks/vex-theme-extension/4050c1c7-5b58-4120-af12-e290cb2b28f0",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
