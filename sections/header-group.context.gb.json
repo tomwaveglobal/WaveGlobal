@@ -16,12 +16,12 @@
     "announcement-bar": {
       "settings": {},
       "blocks": {
-        "announcement_mnCMPh": {
+        "announcement_HNXLHX": {
           "disabled": true,
           "settings": {}
         },
-        "announcement_HNXLHX": {
-          "disabled": false,
+        "announcement_mnCMPh": {
+          "disabled": true,
           "settings": {}
         }
       }
