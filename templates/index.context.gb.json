@@ -121,6 +121,14 @@
             "heading": "‎",
             "button_link": "shopify://collections/hot-tub-full-range"
           }
+        },
+        "image_MGQwRL": {
+          "disabled": false,
+          "settings": {
+            "image": "shopify://shop_images/Carousel_Home_page_ab0cd04f-9e44-408f-acb1-247a33eb816f.jpg",
+            "image_mobile": "shopify://shop_images/Mobile_5f6baf4a-99ce-4ba9-8ea6-1e48c1b94a1c.jpg",
+            "heading": "Stop saying \"next summer.\"<br> 10% Off with SUMMER10"
+          }
         }
       }
     }
