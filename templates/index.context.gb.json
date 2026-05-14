@@ -23,12 +23,12 @@
         "content_width": "small",
         "content_position": "md:items-center md:justify-center",
         "text_alignment": "center",
-        "header-e668b47d8f0d5a72b111c2945e5e3d0a": null,
+        "header-5022b7e4d0f64e47ece67327b7d0365a": null,
         "image_mobile": "shopify://shop_images/Halloween_Homepage_Mobile_2025.png",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-center justify-center",
         "text_alignment_mobile": "center",
-        "header-af50d0b27635a14f3708e9b7f3e29b1a": null,
+        "header-598ac248633aef6690d24f931ff23142": null,
         "color_text": "#ffffff",
         "color_highlight": "#f59e0b",
         "gradient_highlight": "",
@@ -37,7 +37,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 30,
-        "header-1eee2d98d6513133ea6341f9c7bf056e": null,
+        "header-c06975458175310a1e2d6456eafe9993": null,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
@@ -54,7 +54,7 @@
             "heading": "No Tricks, Just Treats",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "header-042bb4b9cda8654182b9c120a1fe5b36": null,
+            "header-074f0d2e74133955c4271d66997a6ce1": null,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -68,7 +68,7 @@
             "text_max_size": 32,
             "text_font": "body",
             "secondary_color": false,
-            "header-50ef7b222615322490bb9425b0fce309": null,
+            "header-d14a7ab1c84653a00242f1e4cf6d5f8f": null,
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
@@ -77,7 +77,7 @@
           "type": "timer",
           "disabled": false,
           "settings": {
-            "paragraph-be167f7b76902a2230d221ee9158a657": null,
+            "paragraph-41bbb5e46249694002797b841daaaa7d": null,
             "year": "2025",
             "month": "10",
             "day": "17",
@@ -112,17 +112,17 @@
     "slideshow": {
       "disabled": false,
       "settings": {
-        "overlay_opacity": 0,
-        "image_height": "650px"
+        "image_height": "650px",
+        "overlay_opacity": 0
       },
       "blocks": {
         "image_TDyLT": {
           "type": "image",
-          "disabled": false,
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/carousel_home_bundle.webp",
             "image_mobile": "shopify://shop_images/carousel_home_bundle_Mobile_1.jpg",
-            "header-d58979948aa559b06d05e3b65c014ac5": null,
+            "header-0ff0058ad43204f4e88879c1b784a5e4": null,
             "heading": "‎",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
