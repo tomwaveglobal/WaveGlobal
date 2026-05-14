@@ -32,16 +32,10 @@
             "button_external": false,
             "button_icon": false
           }
-        },
-        "image_MGQwRL": {
-          "settings": {
-            "button_link": "shopify://products/aegean-hot-tub-etl"
-          }
         }
       },
       "block_order": [
         "image_hgfaH",
-        "image_MGQwRL",
         "image_UPWkm3",
         "image_3jPQA6"
       ]
