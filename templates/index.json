@@ -27,22 +27,6 @@
             "button_icon": false
           }
         },
-        "image_MGQwRL": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/BF-Sup-Homepage-Desktop-enlarged.jpg",
-            "image_mobile": "shopify://shop_images/BF-Sup-Homepage-Mobile.jpg",
-            "heading": "Black Friday Starts Now! <p> Complete SUP Packages <br>from <span style=\"color: #F59E0B;\"> £129.99 </span></p>",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections/sup-range",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
         "image_UPWkm3": {
           "type": "image",
           "settings": {
@@ -92,7 +76,6 @@
       },
       "block_order": [
         "image_MXBUgB",
-        "image_MGQwRL",
         "image_UPWkm3",
         "slide-2",
         "image_3jPQA6"

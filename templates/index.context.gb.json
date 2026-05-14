@@ -113,15 +113,31 @@
       "disabled": false,
       "settings": {},
       "blocks": {
-        "image_MGQwRL": {
+        "image_TDyLT": {
+          "type": "image",
           "disabled": false,
           "settings": {
-            "image": "shopify://shop_images/Carousel_Home_page_ab0cd04f-9e44-408f-acb1-247a33eb816f.jpg",
-            "image_mobile": "shopify://shop_images/Mobile_5f6baf4a-99ce-4ba9-8ea6-1e48c1b94a1c.jpg",
-            "heading": "Stop saying \"next summer.\"<br> 10% Off with SUMMER10"
+            "image": "shopify://shop_images/carousel_home_bundle.webp",
+            "image_mobile": "shopify://shop_images/carousel_home_bundle_Mobile_1.jpg",
+            "header-d58979948aa559b06d05e3b65c014ac5": null,
+            "heading": "‎",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/hot-tub-full-range",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
           }
         }
-      }
+      },
+      "block_order": [
+        "image_TDyLT",
+        "image_MXBUgB",
+        "image_UPWkm3",
+        "slide-2",
+        "image_3jPQA6"
+      ]
     }
   },
   "order": [
