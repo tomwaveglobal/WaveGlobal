@@ -33,11 +33,6 @@
             "button_icon": false
           }
         },
-        "image_kEyLXj": {
-          "settings": {
-            "heading": "Find You Next Adventure, Paddleboards from <span style=\"color: #F59E0B;\">$289.99 </span>"
-          }
-        },
         "image_MGQwRL": {
           "settings": {
             "button_link": "shopify://products/aegean-hot-tub-etl"
@@ -46,7 +41,6 @@
       },
       "block_order": [
         "image_hgfaH",
-        "image_kEyLXj",
         "image_MGQwRL",
         "image_UPWkm3",
         "image_3jPQA6"
