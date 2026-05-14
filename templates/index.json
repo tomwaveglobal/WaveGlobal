@@ -12,17 +12,16 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_kEyLXj": {
+        "image_MXBUgB": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/XMAS-2025-Carousel.jpg",
-            "image_mobile": "shopify://shop_images/Xmas-2025-Carousel-Mobile.jpg",
-            "heading": "Winter Sale: Get It By Christmas! <span style=\"color: #F59E0B;\">Order By 3PM Monday 22nd</span>",
-            "heading_size": "title-sm",
+            "image": "shopify://shop_images/3.0-header_shopify_V6.jpg",
+            "image_mobile": "shopify://shop_images/mobile_11.png",
+            "heading": "‎",
+            "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "Shop Now",
-            "button_link": "shopify://collections/sale",
+            "button_link": "shopify://collections/sup-range",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
@@ -92,7 +91,7 @@
         }
       },
       "block_order": [
-        "image_kEyLXj",
+        "image_MXBUgB",
         "image_MGQwRL",
         "image_UPWkm3",
         "slide-2",
