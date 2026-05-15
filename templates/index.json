@@ -1044,7 +1044,7 @@
             "item_border_radius": "0px",
             "item_shadow_size": "10px",
             "item_shadow_colour": "#F2F2F2",
-            "enable_rich_snippets": false,
+            "enable_rich_snippets": true,
             "disable_same_customer": false,
             "logo_colour": "var(--logo-inverted)"
           }
