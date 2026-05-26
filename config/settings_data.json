@@ -246,7 +246,7 @@
       },
       "18409793183067274168": {
         "type": "shopify://apps/contona-studio/blocks/app-embed/019daa9c-2a92-7703-a13d-b81ee42c4c65",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "image_selector": ".product__media img, .product-single__photo img, [data-product-media] img, .product-gallery img",
           "base_url": "https://api.contona.ai"
