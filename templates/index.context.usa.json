@@ -22,7 +22,7 @@
           "settings": {
             "image": "shopify://shop_images/persona_68_img_310.webp",
             "image_mobile": null,
-            "header-65f7f698ac6923a2d111427e681df8db": null,
+            "header-bd21b64156a03549d4e8d20752be2386": null,
             "heading": "Scary Good Spa Deals Are Here!",
             "heading_size": "title-sm",
             "heading_tag": "h2",
@@ -80,6 +80,26 @@
       "disabled": true,
       "settings": {},
       "blocks": {}
+    },
+    "image_with_text_overlay_4yP8AY": {
+      "settings": {},
+      "blocks": {
+        "button_QTaxgz": {
+          "settings": {
+            "button_link": "https://wavespas.com/en-US"
+          }
+        }
+      }
+    },
+    "image_with_text_overlay_W7VrpE": {
+      "settings": {},
+      "blocks": {
+        "button_3dDzhw": {
+          "settings": {
+            "button_link": "https://wavesupboards.com/en-US"
+          }
+        }
+      }
     }
   }
 }
