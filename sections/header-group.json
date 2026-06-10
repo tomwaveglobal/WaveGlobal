@@ -71,6 +71,7 @@
         "announcement_HNXLHX",
         "announcement_mnCMPh"
       ],
+      "disabled": true,
       "settings": {
         "show_social": true,
         "enable_language_selector": false,
@@ -617,6 +618,7 @@
         "mega_menu_tab_63jewV",
         "mega_menu_CYexnM"
       ],
+      "disabled": true,
       "settings": {
         "menu": "crop-top-nav",
         "menu_mobile": "crop-top-nav",

@@ -65,6 +65,7 @@
         "column-3",
         "column-4"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-border",
         "columns": 4,
@@ -160,6 +161,7 @@
         "text_YmNC7V",
         "brand_information"
       ],
+      "disabled": true,
       "settings": {
         "invert_newsletter_others": true,
         "enable_newsletter": true,

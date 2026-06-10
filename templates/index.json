@@ -9,6 +9,98 @@
  */
 {
   "sections": {
+    "image_with_text_overlay_4yP8AY": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "button_QTaxgz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "https://www.wavespas.com",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "button_QTaxgz"
+      ],
+      "name": "t:sections.image-with-text-overlay.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Hot-Tubs_Amazon_March2026.jpg",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-end",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 10,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_overlay_W7VrpE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "button_3dDzhw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "https://wavesupboards.com/",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "button_3dDzhw"
+      ],
+      "name": "t:sections.image-with-text-overlay.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Paddkeboards_Amazon_March2026-2.jpg",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-end",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 10,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -80,6 +172,7 @@
         "slide-2",
         "image_3jPQA6"
       ],
+      "disabled": true,
       "settings": {
         "autoplay": false,
         "autoplay_speed": 7,
@@ -123,6 +216,7 @@
       "block_order": [
         "text"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
@@ -257,6 +351,7 @@
         "collection-3",
         "collection_HkK9Ei"
       ],
+      "disabled": true,
       "settings": {
         "columns": 4,
         "carousel_on_desktop": true,
@@ -331,6 +426,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/Garda Lifestyle Global 4.mp4",
@@ -482,6 +578,7 @@
         "read_more",
         "spinning_text"
       ],
+      "disabled": true,
       "settings": {
         "product": "garda-hot-tub-ukca",
         "enable_sticky_info": true,
@@ -906,6 +1003,7 @@
       "block_order": [
         "reviews_io_reviewsio_card_carousel_gNbagx"
       ],
+      "disabled": true,
       "settings": {
         "color_text": "",
         "color_background": "",
@@ -955,6 +1053,7 @@
         "collection-2",
         "collection-3"
       ],
+      "disabled": true,
       "settings": {
         "product_limit": 6,
         "columns": 4,
@@ -987,6 +1086,7 @@
     },
     "blog-posts-collage": {
       "type": "blog-posts-collage",
+      "disabled": true,
       "settings": {
         "blog": "hot-tubs",
         "post_limit": 3,
@@ -1032,18 +1132,18 @@
             "header_bg_colour": "#000",
             "header_colour": "#fff",
             "header_star_colour": "#fff",
-            "heading_text_colour": "#0E1311",
+            "heading_text_colour": "#0e1311",
             "heading_font": "sans_serif_n4",
-            "body_text_colour": "#0E1311",
-            "badge_icon_colour": "#0E1311",
-            "badge_text_colour": "#0E1311",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#0e1311",
+            "badge_text_colour": "#0e1311",
             "bg_start_colour": "#ffffff",
             "bg_end_colour": "#ffffff",
             "item_border_width": "0px",
-            "item_border_colour": "#F2F2F2",
+            "item_border_colour": "#f2f2f2",
             "item_border_radius": "0px",
             "item_shadow_size": "10px",
-            "item_shadow_colour": "#F2F2F2",
+            "item_shadow_colour": "#f2f2f2",
             "enable_rich_snippets": true,
             "disable_same_customer": false,
             "logo_colour": "var(--logo-inverted)"
@@ -1053,6 +1153,7 @@
       "block_order": [
         "reviews_io_reviewsio_card_carousel_7nn4GL"
       ],
+      "disabled": true,
       "settings": {
         "color_text": "",
         "color_background": "",
@@ -1071,6 +1172,8 @@
     }
   },
   "order": [
+    "image_with_text_overlay_4yP8AY",
+    "image_with_text_overlay_W7VrpE",
     "slideshow",
     "rich-text-1",
     "collection-list",

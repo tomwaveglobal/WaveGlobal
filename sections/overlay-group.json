@@ -13,6 +13,7 @@
   "sections": {
     "cart-drawer": {
       "type": "cart-drawer",
+      "disabled": true,
       "settings": {
         "show_vendor": false,
         "show_cart_note": false,
@@ -47,6 +48,7 @@
     },
     "search-drawer": {
       "type": "search-drawer",
+      "disabled": true,
       "settings": {}
     },
     "newsletter-popup": {
@@ -124,6 +126,7 @@
         "media",
         "floating"
       ],
+      "disabled": true,
       "settings": {
         "mode": "enabled",
         "only_homepage": true,
@@ -251,6 +254,7 @@
         "spacing",
         "buttons"
       ],
+      "disabled": true,
       "settings": {
         "mode": "enabled",
         "delay": 5,
@@ -321,6 +325,7 @@
         "mobile-dock-5",
         "mobile-dock-6"
       ],
+      "disabled": true,
       "settings": {
         "color_text": "#000000",
         "color_background": "#ffffff",
