@@ -251,6 +251,11 @@
           "image_selector": ".product__media img, .product-single__photo img, [data-product-media] img, .product-gallery img",
           "base_url": "https://api.contona.ai"
         }
+      },
+      "8764476057892802672": {
+        "type": "shopify://apps/stoq/blocks/main/4bb73be2-b7c2-4870-949f-c528145452a3",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
